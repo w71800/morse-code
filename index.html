@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Morse Code</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans+TC&amp;display=swap"rel="stylesheet'>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div class="panels">
+  <div class="panel">
+    <h3>Morse Code Translator</h3>
+    <h1>摩斯密碼翻譯器</h1>
+    <textarea id="input" rows="4" placeholder="請輸入英文">MORSECODE</textarea>
+    <div class="symbol">⟲</div>
+    <textarea id="output" rows="4" placeholder="請輸入密碼"></textarea>
+    <div class="showResult"> </div>
+    <div class="buttons">
+      <div class="button" id="btnMorse">轉成密碼</div>
+      <div class="button" id="btnEng">轉換回來</div>
+      <div class="button" id="btnPlay">播放</div>
+    </div>
+  </div>
+  <div class="panel info">
+    <h3>英文字母 / 密碼對照表</h3>
+    <hr/>
+    <ul class="codeList"></ul>
+  </div>
+</div>
+<audio class="short" src="http://2017.awiclass.monoame.com/audio/morse/short.mp3"></audio>
+<audio class="long" src="http://2017.awiclass.monoame.com/audio/morse/long.mp3"></audio>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

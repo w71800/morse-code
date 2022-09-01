@@ -1,0 +1,119 @@
+* {
+  font-family: "Noto Sans TC";
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 100px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #292B73;
+}
+
+.panels {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+}
+.panels h1, .panels h3 {
+  text-align: center;
+  margin: 0;
+}
+.panels h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.panels h3 {
+  font-weight: 400;
+}
+.panels textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.panels textarea:focus {
+  border-color: #292B73;
+}
+.panels .panel {
+  flex: 5;
+  padding: 30px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  color: #292B73;
+  border-radius: 5px;
+}
+.panels .panel.info {
+  flex: 4;
+  background-color: #FFB637;
+}
+.panels .panel.info ul {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  align-items: center;
+}
+.panels .panel.info ul li {
+  font-size: 20px;
+  list-style-type: none;
+  width: 30%;
+}
+.panels .panel.info ul li span {
+  color: gray;
+  font-size: 20px;
+}
+.panels .panel .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.panels .panel .buttons .button {
+  padding: 8px 16px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.panels .panel .buttons .button#btnMorse {
+  background-color: #292B73;
+  color: white;
+  margin-right: 8px;
+}
+.panels .panel .buttons .button#btnEng {
+  background-color: #FFB637;
+  margin-right: 8px;
+}
+.panels .panel .buttons .button#btnPlay {
+  border: 2px solid #000;
+}
+.panels .panel .symbol {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  transition-duration: 1s;
+}
+.panels .panel .symbol.rotate {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+.panels .panel hr {
+  border: none;
+  border-top: 3px solid #292B73;
+}
+.panels .panel .showResult {
+  text-align: center;
+  color: #999;
+  font-weight: 200;
+}
+.panels .panel .showResult .highlight {
+  color: #FFB637;
+}
